@@ -25,12 +25,16 @@ module.exports = {
                 loader: "html-loader",
             },
             {
-                test: /\.(png|jpe?g|gif|svg)$/i,
+                test: /\.(png|jpe?g|gif)$/i,
                 type: "asset/resource",
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: "asset/resource",
+            },
+            {
+                test: /\.svg$/,
+                type: "asset/source",
             },
         ],
     },
